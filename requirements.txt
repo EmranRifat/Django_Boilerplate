@@ -10,3 +10,4 @@ djangorestframework
 djangorestframework-simplejwt
 psycopg[binary]
 python-decouple
+django-environ
