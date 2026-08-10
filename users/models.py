@@ -40,6 +40,7 @@ class CustomUserManager(BaseUserManager):
         )
 
 
+
 class CustomUser(AbstractUser):
     """Custom user model using email for authentication."""
 
