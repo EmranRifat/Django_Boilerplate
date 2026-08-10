@@ -6,6 +6,10 @@ from rest_framework_simplejwt.tokens import RefreshToken
 User = get_user_model()
 
 
+
+# -----------------------------------------
+        # Signup serializer
+# -----------------------------------------
 class SignupSerializer(serializers.ModelSerializer):
     password = serializers.CharField(
         write_only=True,
@@ -33,8 +37,10 @@ class SignupSerializer(serializers.ModelSerializer):
 
 
 
- # login serializer
- 
+
+# -----------------------------------------
+        # login serializer
+# -----------------------------------------
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
