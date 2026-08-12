@@ -29,10 +29,13 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
+    # Third-party
     "rest_framework",
     "rest_framework_simplejwt",
 
+    # Local apps
     "users",
+    "my_app",
 ]
 
 
@@ -49,7 +52,7 @@ MIDDLEWARE = [
 
 
 # URLs
-ROOT_URLCONF = "boilerplate.urls"
+ROOT_URLCONF = "core.urls"
 
 
 # Templates
@@ -69,7 +72,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = "boilerplate.wsgi.application"
+WSGI_APPLICATION = "core.wsgi.application"
 
 
 # Database

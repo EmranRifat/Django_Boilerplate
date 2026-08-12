@@ -30,7 +30,7 @@ class SignupView(APIView):
 
 
 # ----------------------------------------------------
-            # User Login function 
+            # User Login logic 
 # ----------------------------------------------------
 
 class UserLoginView(APIView):
@@ -55,7 +55,7 @@ class UserLoginView(APIView):
 
 
 # ----------------------------------------------------
-            # User LogOut function 
+            # User LogOut logic 
 # ----------------------------------------------------
 class UserLogoutView(APIView):
     permission_classes = [AllowAny]
@@ -67,3 +67,25 @@ class UserLogoutView(APIView):
             },
             status=status.HTTP_200_OK,
         )
+
+
+
+
+# ----------------------------------------------------
+            # User List logic 
+# ----------------------------------------------------
+
+class UserListView(APIView):
+    pass
+
+
+class UserDetailView(APIView):
+    pass
+
+
+class ForgotPasswordView(APIView):
+    pass
+
+
+class ResetPasswordView(APIView):
+    pass
